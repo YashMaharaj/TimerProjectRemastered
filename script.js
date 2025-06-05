@@ -5,6 +5,9 @@
 
     // PYTHON
 // Select the element where you want to display the text
+ getElementById('HomePage-Text').remove.addEventListener('click', function() {
+      display.innerHTML = '<div class = "BodyText"></div>'
+});
 var display = document.querySelector(".effect");
 
 // Select the button (link) by its ID
@@ -34,6 +37,8 @@ document.getElementById("python").addEventListener("click", function () {
         </ol>
         </div>
     `;
+
+
 });
 
 // AZ 900
