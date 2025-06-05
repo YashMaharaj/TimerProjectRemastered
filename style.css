@@ -1,4 +1,7 @@
 /*   HTML STYLING   */
+/*========================= BODY =====================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
@@ -15,15 +18,43 @@ body {
   flex-direction: column;
 }
 
+
+.BodyText{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: riseUp 1s ease-out forwards;
+  text-align: center;
+  font-size: x-large;
+}
+
+#HomePage-Text{
+  color: #fdf1f1;
+  margin: auto ;
+  width: 50%;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+ font-family: 'Montserrat', 'sans-seriff';
+}
+
+@keyframes riseUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .partition {
   margin-top: 90px;
 }
-
+/*========================= MENU =====================*/
 .nav-head, .closebtn {
     display: inline;
     color: white;
     padding: 10px;
 }
+
 
 .sidenav {
   height: 100%;
@@ -65,7 +96,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+/*========================= NAV_BAR =====================*/
 .navbar {
   position: fixed;
     top: 0;
@@ -106,15 +137,23 @@ ul {
     display: inline;
 }
 
-footer{
-    background-color: #000000d0; 
-    text-align: center; 
-    padding: 20px;
-    font-size: 13px;
-    color: white;
-    margin-top: auto;
+/*========================= Footer =====================*/
+.footer{
+  color: #fdf1f1;
+  position:flexible;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  font-size: medium;
+  font-family: 'Montserrat', 'sans-serif';
+  margin-top: auto;
 }
 
+.footer > a{
+  color: #f1f1f1;
+  text-decoration: none;
+}
 
 /*   JS STYLING   */
 .details {
