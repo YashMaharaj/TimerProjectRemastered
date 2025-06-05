@@ -1,0 +1,146 @@
+/*   HTML STYLING   */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url(images/bgimagetwo.png);
+  background-repeat: repeat;
+  background-size: cover; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.partition {
+  margin-top: 90px;
+}
+
+.nav-head, .closebtn {
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navbar {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    padding-right: 21px;
+}
+
+nav {
+    display: inline;
+    background-color: black;
+    padding-right: 100%;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-top: 5px;
+}
+
+#navbarSupportedContent {
+    margin-left: 832px;
+}
+
+ul {
+    display: inline;
+}
+
+footer{
+    background-color: #000000d0; 
+    text-align: center; 
+    padding: 20px;
+    font-size: 13px;
+    color: white;
+    margin-top: auto;
+}
+
+
+/*   JS STYLING   */
+.details {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 90px;
+}
+
+.eff-head {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.eff-para {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+ol li {
+  color: white;
+  margin-top: 10px;
+  list-style-type: circle;
+}
