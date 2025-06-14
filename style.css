@@ -48,6 +48,7 @@ body {
 .partition {
   margin-top: 90px;
 }
+
 /*========================= MENU =====================*/
 .nav-head, .closebtn {
     display: inline;
@@ -96,6 +97,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 /*========================= NAV_BAR =====================*/
 .navbar {
   position: fixed;
@@ -121,7 +123,7 @@ nav ul li {
     list-style-type: none;
     display: inline;
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav ul {
@@ -130,7 +132,7 @@ nav ul {
 }
 
 #navbarSupportedContent {
-    margin-left: 832px;
+    margin-left: 740px;
 }
 
 ul {

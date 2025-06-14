@@ -5,14 +5,32 @@
 
     // PYTHON
 // Select the element where you want to display the text
- getElementById('HomePage-Text').remove.addEventListener('click', function() {
-      display.innerHTML = '<div class = "BodyText"></div>'
-});
-var display = document.querySelector(".effect");
+//  getElementById("HomePage-Text").remove.addEventListener("click", function () {
+//    display.innerHTML = '<div class = "BodyText"></div>';
+//  });
 
-// Select the button (link) by its ID
-document.getElementById("python").addEventListener("click", function () {
-  display.innerHTML = `<div class="details">
+ var display = document.querySelector(".effect");
+ var deleted = document.querySelector(".BodyText");
+
+ document.getElementById("python").addEventListener("click", function () {
+   deleted.remove(); // Remove the HomePage-Text element
+ });
+
+ document.getElementById("az900").addEventListener("click", function () {
+   deleted.remove(); // Remove the HomePage-Text element
+ });
+
+ document.getElementById("az204").addEventListener("click", function () {
+   deleted.remove(); // Remove the HomePage-Text element
+ });
+
+ document.getElementById("az400").addEventListener("click", function () {
+   deleted.remove(); // Remove the HomePage-Text element
+ });
+
+ // Select the button (link) by its ID
+ document.getElementById("python").addEventListener("click", function () {
+   display.innerHTML = `<div class="details">
         <h2 class="eff-head">PYTHON</h2>
         <p class="eff-para">This expert-level certification focuses on designing and implementing DevOps practices for Azure environments.
         It covers continuous integration/continuous deployment (CI/CD), infrastructure as code, monitoring, security,
@@ -37,13 +55,11 @@ document.getElementById("python").addEventListener("click", function () {
         </ol>
         </div>
     `;
+ });
 
-
-});
-
-// AZ 900
-document.getElementById("az900").addEventListener("click", function () {
-  display.innerHTML = `<div class="details">
+ // AZ 900
+ document.getElementById("az900").addEventListener("click", function () {
+   display.innerHTML = `<div class="details">
    <h2 class="eff-head">AZ 900</h2>
    <p class="eff-para">An entry-level certification that provides foundational knowledge of cloud computing concepts and 
    Azure services. Perfect for beginners or professionals transitioning to cloud technologies. Covers basic Azure services,
@@ -68,11 +84,11 @@ document.getElementById("az900").addEventListener("click", function () {
    </ol>
  </div>
  `;
-});
+ });
 
-    // AZ 204
-document.getElementById("az204").addEventListener("click", function() {
-  display.innerHTML = `<div class="details">
+ // AZ 204
+ document.getElementById("az204").addEventListener("click", function () {
+   display.innerHTML = `<div class="details">
    <h2 class="eff-head">AZ 204</h2>
    <p class="eff-para">This associate-level certification is designed for developers who build and deploy applications on 
    Microsoft Azure. It covers developing Azure compute solutions, storage solutions, security implementation, monitoring, and 
@@ -98,11 +114,11 @@ document.getElementById("az204").addEventListener("click", function() {
    </ol>
  </div>
  `;
-});
+ });
 
-    // AZ 400
-document.getElementById("az400").addEventListener("click", function() {
-  display.innerHTML = `<div class="details">
+ // AZ 400
+ document.getElementById("az400").addEventListener("click", function () {
+   display.innerHTML = `<div class="details">
         <h2 class="eff-head">AZ 400</h2>
         <p class="eff-para">This expert-level certification focuses on designing and implementing DevOps practices for Azure environments.
         It covers continuous integration/continuous deployment (CI/CD), infrastructure as code, monitoring, security,
@@ -127,4 +143,4 @@ document.getElementById("az400").addEventListener("click", function() {
         </ol>
         </div>
     `;
-});
+ });
